@@ -19,5 +19,6 @@ Ainsi, nous avons premièrement réalisé deux fonctions permettant de trouver d
 
 Nous avons modifié l'alphabet du langage pour ajouter la liste de fonctions, qui pourrait être vide ou être une fonction suivi d'une liste de fonction, à la manière des listes de variables. 
 
-Nous avons aussi beaucoup modifié les fonctions python du fichier compile.py pour les adapter aux fonctions. Nous avons aussi ajouté une fonction compile_func qui s'adapte à une liste vide ou non vide, une fonction initVar, initMainVar. De même nous avons rajouté 
+Nous avons aussi beaucoup modifié les fonctions python du fichier compile.py pour les adapter aux fonctions. Nous avons aussi ajouté une fonction compile_func qui s'adapte à une liste vide ou non vide, une fonction initVar, initMainVar. De même nous avons rajouté l'implémentation de la fonction start : qui initialise les variables de main et l'appelle. Nous pensons que l'erreur vient de l'initialisation de ces variables. 
 
+Nous avons alors un problème de segmentation fault, nous n'avons aucune idée de la provenance de l'erreur.
