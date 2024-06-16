@@ -9,7 +9,7 @@ Nous avons passé beaucoup de temps sur les fonctions et n'avons pas eu le temps
 
 Pour faire malgré tout tourner la compilation, faire les commandes suivantes :
 - Création du .asm : python3 main.py hello.c helloTest.asm :
-- Création et lancement du .o : nasm -f elf64 helloTest.asm && gcc -no-pie helloTest.o && ./a.out 1 5 
+- Création et lancement du .o (1 et 5 étant les paramètres de la fonction main) : nasm -f elf64 helloTest.asm && gcc -no-pie helloTest.o && ./a.out 1 5
 
 Ceci donne une segmentation fault, ce qui doit sûrement être dû à une mauvaise gestion de la pile.
 
