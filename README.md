@@ -13,7 +13,7 @@ Pour faire malgré tout tourner la compilation, faire les commandes suivantes :
 
 Ceci donne une segmentation fault, ce qui doit sûrement être dû à une mauvaise gestion de la pile.
 
-Pour implémenter les fonctions, nous avons tout d'abord du comprendre les conventions sur la pile d'une fonction. Nous avons donc compris que chaque fonction possédait une partie pour les paramètres, pour la commande suivant la fonction, une adresse rbp où est stocké l'adresse de la fonction qui l'appelle, le old rpb, et aussi une partie pour les variables locales.
+Pour implémenter les fonctions, nous avons tout d'abord du comprendre les conventions sur la pile d'une fonction. A chaque appel de fonction est donc crée un "frame" pour celui-ci, possédant une partie pour les paramètres, pour la commande suivant l'appel, une adresse où est stocké l'adresse de la fonction qui lance l'appelle, le old rpb, et aussi une partie pour les variables locales.
 
 Ainsi, nous avons premièrement réalisé deux fonctions permettant de trouver des dictionnaires associant une clé, étant le nom d'une fonction, à un dictionnaire qui associe à chaque nom de variable sa position associé (par rapport à rbp)
 
